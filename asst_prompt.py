@@ -4,6 +4,13 @@ Created on Sun Mar 14 12:29:09 2021
 
 @author: moghe
 """
+def z_matics():
+    # z matics
+    print('Z---Matics')
+    z=int(input('z---matics:: '))
+    print(float(z))
+    z.z=z+z.z
+    print(z.z)
 def asc():
     from PIL import Image
     path=input('...:img-path> ')
