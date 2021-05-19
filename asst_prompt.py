@@ -1,7 +1,13 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Mar 14 12:29:09 2021
+Spyder Editor
 
+This is a temporary script file.
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Mar 14 12:29:09 2021
 @author: moghe
 """
 def z_matics():
@@ -211,37 +217,12 @@ print('Asst prom')
 cls()
 print('Asst promp')
 cls()
-print('Asst prompt')
-cls()
-print('Asst prompt:')
-cls()
-print('Asst prompt: Y')
-cls()
-print('Asst prompt: Yo')
-cls()
-print('Asst prompt: You')
-cls()
-print('Asst prompt: Your')
-cls()
-print('Asst prompt: Your ')
-cls()
-print('Asst prompt: Your a')
-cls()
-print('Asst prompt: Your as')
-cls()
-print('Asst prompt: Your ass')
-cls()
-print('Asst prompt: Your assi')
-cls()
-print('Asst prompt: Your assis')
-cls()
-print('Asst prompt: Your assist')
-cls()
-print('Asst prompt: Your assista')
-cls()
-print('Asst prompt: Your assistan')
-cls()
-print('Asst prompt: Your assistant\n')
+print('Asst prompt\n')
+import platform
+
+my_system = platform.uname()
+print(f"RUNNING ON PC: {my_system.node} VERSION: {my_system.version}")
+
 import time
 time.sleep(2)
 def keyboardInterruptHandler(signal, frame):
@@ -254,6 +235,13 @@ def call_ip(website):
     import socket
     url=website
     print(socket.gethostbyname(url))
+def av(num):
+    sum_num = 0
+    for i in num:
+        sum_num = sum_num + i   
+
+    avgr = sum_num/len(num)
+    return avgr
 def inspect(address):
     '''inspect a address'''
     try:
@@ -495,6 +483,78 @@ def main():
         word_list = string.split()
         out=(' '.join([i for i in word_list if i not in word]))
         print(len(out))
+    if 'derive' in code:
+        string = code
+        word = 'derive'
+        word_list = string.split()
+        out=(' '.join([i for i in word_list if i not in word]))
+        outt=out+':'
+        import os
+        os.system('start '+outt)
+    if '?' in code:
+        mystring=code
+        keyword='?'
+        bk, keyword, ak = mystring.partition(keyword)
+        print('late value:',{ak},'ease var:',{bk})
+    if '?#' in code:
+        mystring=code
+        keyword='?#'
+        bk, keyword, ak = mystring.partition(keyword)
+        c=bk.split(',')
+        ins=[int(float(i)) for i in c]
+        try:print(av(ins))
+        except:print('Error:Compiling:cms is unable to compile ease var')
+    if code=='asst':
+        print('\nASST PROMPT VERSION:1.2.0; COMPILING MADE SYSTEM:CODE:402 VERSION:0.5.3 CURRENTLY RUNNING ON PC',my_system.node,'RELEASE',my_system.release)
+    if '?!' in code:
+        s=code
+        k='?!'
+        bk,k,ak=s.partition(k)
+        c=bk.split(',')
+        ins=[int(float((i))) for i in c]
+        ins.sort()
+        try:print(ins[-1])
+        except:print('Error:Compiling:cms is unable to compile ease var')
+    if 'cr-note' in code:
+        mystring=code
+        keyword='cr-note'
+        bk, keyword, ak = mystring.partition(keyword)
+        global lango
+        lango=ak
+        import pyaudio
+        # -*- coding: utf-8 -*-
+        """
+        Created on Sat Dec  5 10:27:47 2020
+        @author: moghe
+        """
+        while True:
+            import speech_recognition as sr
+            recognizer = sr.Recognizer()
+            ''' recording the sound '''
+            with sr.Microphone() as source:
+                recognizer.adjust_for_ambient_noise(source, duration=0.2)
+                print("recording...")
+                cmd = recognizer.listen(source)
+                print(':::\n')
+                try:
+                    global text
+                    text = recognizer.recognize_google(
+                    cmd, 
+                        language=lango
+                            
+                        )
+                    print(text)
+                except:print(text)
+    if 'sqrt' in code:
+        string = code
+        word = 'sqrt'
+        word_list = string.split()
+        out=(' '.join([i for i in word_list if i not in word]))
+        try:
+            out=int(float(out))
+            print()
+            print(out*0.5)
+        except:print('Error:cms')
 while True:
     try:
         main()
