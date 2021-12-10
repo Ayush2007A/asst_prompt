@@ -1,4 +1,6 @@
-#### 1. press:  presses the keyboard keys
+## Asst prompt is a commanding pad in python that will minimize your efforts of downloading youtube videos, solving algebra and doing factorization with getting ip address of a site, converting image to ascii art, getting approximate average of numbers as well as many more things!
+
+#### 1. Command-> press:  presses the keyboard keys
 
 For example:
 
@@ -68,3 +70,15 @@ late value: {'!'} ease var: {'1,2,4,34,6,8'}
 ```
 
 * Note: except late value and ease var all other commands should be before the line and there should be space in each of them.
+
+
+Output:
+
+![image](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9sc779uoe4stc8wf4h18.png)
+
+
+
+#### Please suggest if something can be improved....
+
+
+Thankyou
