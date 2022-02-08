@@ -82,3 +82,10 @@ Output:
 
 
 Thankyou
+
+
+
+
+### For tutorial of how to make it please visit:
+
+https://dev.to/ayush2007a/create-a-command-pad-to-minimize-your-efforts-and-make-your-work-easy-30j5
